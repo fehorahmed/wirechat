@@ -42,7 +42,7 @@ class AppUserController
         } else {
             return response()->json([
                 'status'=>false,
-                'message'=>$validation->errors()->first()
+                'message'=>"You don't have the permission to access."
             ]);
         }
     }
