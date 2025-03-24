@@ -4,8 +4,90 @@
         "Read more about it at https://getcomposer.org/doc/01-basic-usage.md#installing-dependencies",
         "This file is @generated automatically"
     ],
-    "content-hash": "f0eb319e1f8738c33a2ce87f99426954",
+    "content-hash": "1addc6005f9241cf403c217434b962f4",
     "packages": [
+        {
+            "name": "artem-schander/l5-modular",
+            "version": "2.1.1",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/L5Modular/L5Modular.git",
+                "reference": "1038b3208a2c8651133a3b5ea943b83de1626e29"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/L5Modular/L5Modular/zipball/1038b3208a2c8651133a3b5ea943b83de1626e29",
+                "reference": "1038b3208a2c8651133a3b5ea943b83de1626e29",
+                "shasum": ""
+            },
+            "require": {
+                "laravel/framework": ">=5.7",
+                "php": ">=7.2"
+            },
+            "require-dev": {
+                "laravel/framework": "^5|^6|^7",
+                "mockery/mockery": "^1.3",
+                "orchestra/testbench": "^3|^4|^5",
+                "phpunit/phpunit": "^7|^8"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "aliases": {
+                        "L5Modular": "ArtemSchander\\L5Modular\\Facades\\L5Modular"
+                    },
+                    "providers": [
+                        "ArtemSchander\\L5Modular\\ModuleServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "ArtemSchander\\L5Modular\\": "src"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Artem Schander",
+                    "email": "info@artekk.de",
+                    "homepage": "https://artekk.de"
+                }
+            ],
+            "description": "Modular pattern generator for Laravel",
+            "homepage": "https://l5modular.com",
+            "keywords": [
+                "Artem",
+                "Schander",
+                "artisan",
+                "generator",
+                "l5modular",
+                "laravel",
+                "modular",
+                "module",
+                "modules",
+                "pattern",
+                "structure"
+            ],
+            "support": {
+                "issues": "https://github.com/L5Modular/L5Modular/issues",
+                "source": "https://github.com/L5Modular/L5Modular/tree/2.1.1"
+            },
+            "funding": [
+                {
+                    "url": "https://github.com/Artem-Schander",
+                    "type": "github"
+                },
+                {
+                    "url": "https://www.patreon.com/artem_schander",
+                    "type": "patreon"
+                }
+            ],
+            "time": "2021-07-27T20:47:49+00:00"
+        },
         {
             "name": "brick/math",
             "version": "0.12.3",
@@ -1586,6 +1668,70 @@
                 "source": "https://github.com/laravel/reverb/tree/v1.4.6"
             },
             "time": "2025-01-28T15:14:46+00:00"
+        },
+        {
+            "name": "laravel/sanctum",
+            "version": "v4.0.8",
+            "source": {
+                "type": "git",
+                "url": "https://github.com/laravel/sanctum.git",
+                "reference": "ec1dd9ddb2ab370f79dfe724a101856e0963f43c"
+            },
+            "dist": {
+                "type": "zip",
+                "url": "https://api.github.com/repos/laravel/sanctum/zipball/ec1dd9ddb2ab370f79dfe724a101856e0963f43c",
+                "reference": "ec1dd9ddb2ab370f79dfe724a101856e0963f43c",
+                "shasum": ""
+            },
+            "require": {
+                "ext-json": "*",
+                "illuminate/console": "^11.0|^12.0",
+                "illuminate/contracts": "^11.0|^12.0",
+                "illuminate/database": "^11.0|^12.0",
+                "illuminate/support": "^11.0|^12.0",
+                "php": "^8.2",
+                "symfony/console": "^7.0"
+            },
+            "require-dev": {
+                "mockery/mockery": "^1.6",
+                "orchestra/testbench": "^9.0|^10.0",
+                "phpstan/phpstan": "^1.10",
+                "phpunit/phpunit": "^11.3"
+            },
+            "type": "library",
+            "extra": {
+                "laravel": {
+                    "providers": [
+                        "Laravel\\Sanctum\\SanctumServiceProvider"
+                    ]
+                }
+            },
+            "autoload": {
+                "psr-4": {
+                    "Laravel\\Sanctum\\": "src/"
+                }
+            },
+            "notification-url": "https://packagist.org/downloads/",
+            "license": [
+                "MIT"
+            ],
+            "authors": [
+                {
+                    "name": "Taylor Otwell",
+                    "email": "taylor@laravel.com"
+                }
+            ],
+            "description": "Laravel Sanctum provides a featherweight authentication system for SPAs and simple APIs.",
+            "keywords": [
+                "auth",
+                "laravel",
+                "sanctum"
+            ],
+            "support": {
+                "issues": "https://github.com/laravel/sanctum/issues",
+                "source": "https://github.com/laravel/sanctum"
+            },
+            "time": "2025-01-26T19:34:36+00:00"
         },
         {
             "name": "laravel/serializable-closure",

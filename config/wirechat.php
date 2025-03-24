@@ -12,7 +12,7 @@ return [
      * User Model:
      * The model class representing your users.
      */
-    'user_model' => \App\Models\AppUser::class,
+    'user_model' => \App\Modules\AppUser\Models\AppUser::class,
 
     /**
      * Broadcasting:
