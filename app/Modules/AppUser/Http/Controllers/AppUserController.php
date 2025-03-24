@@ -46,4 +46,8 @@ class AppUserController
             ]);
         }
     }
+
+    public function worldChatCreate(Request $request){
+
+    }
 }
